@@ -1,0 +1,10 @@
+.container {
+    height: 150px;
+    text-align: center;
+    background-color: teal;
+}
+
+.title {
+    padding-top: 50px;
+    color: #fff;
+}
