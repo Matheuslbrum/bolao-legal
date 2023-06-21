@@ -12,7 +12,7 @@ function App() {
 
   const fetchUsersData = async () => {
     try {
-      const response = await axios.get("https://bolao-legal-api-production.up.railway.app/user");
+      const response = await axios.get("https://expressjs-server-production-085c.up.railway.app/user");
       setUserData(response.data)
     } catch (error) {
       console.error('error', error);
@@ -21,7 +21,7 @@ function App() {
 
   const fetchAdmData = async () => {
     try {
-      const response = await axios.get("https://bolao-legal-api-production.up.railway.app/adm");
+      const response = await axios.get("https://expressjs-server-production-085c.up.railway.app/adm");
       setAdmData(response.data)
     } catch (error) {
       console.error('error', error);
@@ -30,7 +30,7 @@ function App() {
 
   const fetchScoreData = async () => {
     try {
-      const response = await axios.get("https://bolao-legal-api-production.up.railway.app/score");
+      const response = await axios.get("https://expressjs-server-production-085c.up.railway.app/score");
       setScoreData(response.data)
     } catch (error) {
       console.error('error', error);
