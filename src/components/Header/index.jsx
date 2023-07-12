@@ -5,7 +5,7 @@ function Header() {
       <>
         <Box height='150px' textAlign='center' background='teal'>
           <Box paddingTop='20px'>
-            <Text>Bolão da Amizade</Text>
+            <Text fontSize='4xl'>Bolão da Amizade</Text>
           </Box>
         </Box>
       </>

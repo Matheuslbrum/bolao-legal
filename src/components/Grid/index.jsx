@@ -6,12 +6,12 @@ import MyModal from "../Modal";
 function Grid({itemsPerPage, filteredData, admData, scoreData}) {
 
   const [currentPage, setCurrentPage] = useState(1);
-  const [selectedRow, setSelectedRow] = useState({});
+  const [selectedRow, setSelectedRow] = useState([]);
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  insertPoint(filteredData, scoreData)
+  insertPoint(filteredData, scoreData, admData)
   const ordenedData = filteredData.sort((a, b) => b.points - a.points).map((data, index) => {
     return {
       ...data,

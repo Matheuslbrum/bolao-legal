@@ -13,7 +13,9 @@ function App() {
   const fetchUsersData = async () => {
     try {
       const response = await axios.get("https://expressjs-server-production-085c.up.railway.app/user");
-      setUserData(response.data)
+      if(response.data.length > 0){
+        setUserData(response.data)
+      }
     } catch (error) {
       console.error('error', error);
     }
